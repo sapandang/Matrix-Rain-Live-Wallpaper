@@ -21,11 +21,12 @@ import java.util.Random;
 
 public class matrixWall extends WallpaperService {
 
-    private boolean mVisible;
-    Canvas canvas;
-    int Drawspeed=10;
-    Context mcontext;
+    private boolean mVisible;  // visible flag
+    Canvas canvas;      // canvas reference
+    int Drawspeed=10;   // thread call delay time
+    Context mcontext;   //reference to the current context
 
+    // ======== MATRIX LIVE WALLPAPER VARS
     int background_color= Color.parseColor("#FF000000");
     int text_color=Color.parseColor("#FF8BFF4A");
 
@@ -40,12 +41,14 @@ public class matrixWall extends WallpaperService {
     Random rand = new Random(); //random generater
 
     int[]  textPosition; // contain the position which will help to draw the text
-
+    //======================
 
     @Override
     public Engine onCreateEngine() {
         //set the Preference default value
-        mcontext = this;
+        mcontext = this;  //set the current context
+
+        //Initalise and read the preference
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -55,30 +58,56 @@ public class matrixWall extends WallpaperService {
         background_color = colorDialog.getPickerColor(getBaseContext(), 1);
         text_color =colorDialog.getPickerColor(getBaseContext(), 2);
 
+        //Some loggers Commnet or remove if you want
         Log.d("back_color",""+background_color);
         Log.d("text_color",""+text_color);
 
         textChar = text.toCharArray(); // split the character of the text
         textLength = textChar.length;
         columnSize = width/fontSize;
-        return new LiveWall();
+
+        //return the Engine Class
+        return new LiveWall(); // this calls contain the wallpaper code
     }
 
 
+    /*
+    * this class extends the engine for the live wallpaper
+    * THis class implements all the draw calls required to draw the wallpaper
+    * This call is to neseted inside the wallpaper service class to function properly
+    * don't know why though :(
+     */
     public class LiveWall extends Engine
     {
-        final Handler mHandler = new Handler();
+
+        final Handler mHandler = new Handler(); // this is to handle the thread
+
+        //the tread responsibe for drawing this thread get calls every time
+        // drawspeed vars set the execution speed
         private final Runnable mDrawFrame = new Runnable() {
             public void run() {
+
+                //Matrix code to the color when changed
+                // callback can also be used but I havent
                 background_color = colorDialog.getPickerColor(getBaseContext(), 1);
                 text_color =colorDialog.getPickerColor(getBaseContext(), 2);
+                // ^^^^^^^^
+
+                // This method get called each time to drwaw thw frame
+                // Engine class does not provide any invlidate methods
+                // as used in canvas
+                // set your draw call here
                 drawFrame();
             }
         };
 
+
+        //Called when the surface is created
         @Override
         public void onSurfaceCreated(SurfaceHolder holder) {
             super.onSurfaceCreated(holder);
+
+            //update  the matrix variables
             width = getDesiredMinimumWidth();
             height = getDesiredMinimumHeight();
             columnSize = width/fontSize;
@@ -87,18 +116,23 @@ public class matrixWall extends WallpaperService {
             for(int x = 0; x < columnSize; x++) {
                 textPosition[x] = 1;
             }
+            //^^^^^^^^^^^^^^^
 
-
+            //call the draw method
+            // this is where you must call your draw code
             drawFrame();
 
         }
 
+        // remove thread
         @Override
         public void onDestroy() {
             super.onDestroy();
             mHandler.removeCallbacks(mDrawFrame);
         }
 
+
+        //called when varaible changed
         @Override
         public void onVisibilityChanged(boolean visible) {
             mVisible = visible;
@@ -129,29 +163,40 @@ public class matrixWall extends WallpaperService {
                 textChar = text.toCharArray(); // split the character of the text
                 textLength = textChar.length;
                 columnSize = width/fontSize;
+
+                //this is necessay to remove the call back
                 mHandler.removeCallbacks(mDrawFrame);
             }
         }
 
+        //called when surface destroyed
         @Override
         public void onSurfaceDestroyed(SurfaceHolder holder) {
             super.onSurfaceDestroyed(holder);
             mVisible = false;
+            //this is necessay to remove the call back
             mHandler.removeCallbacks(mDrawFrame);
         }
 
 
+
+        //this function contain the the main draw call
+        /// this function need to call every time the code is executed
+        // the thread call this functioin with some delay "drawspeed"
         public void drawFrame()
         {
+            //getting the surface holder
             final SurfaceHolder holder = getSurfaceHolder();
 
-            canvas = null;
+            canvas = null;  // canvas
             try {
-                canvas = holder.lockCanvas();
+                canvas = holder.lockCanvas();  //get the canvas
                 if (canvas != null) {
                     // draw something
 
+                    // canvas matrix draw code
                     canvasDraw();
+                    //^^^^
                 }
             } finally {
                 if (canvas != null)
@@ -159,22 +204,26 @@ public class matrixWall extends WallpaperService {
             }
 
             // Reschedule the next redraw
+            // this is the replacement for the invilidate funtion
+            // every time call the drawFrame to draw the matrix
             mHandler.removeCallbacks(mDrawFrame);
             if (mVisible) {
+                // set the execution delay
                 mHandler.postDelayed(mDrawFrame, Drawspeed);
             }
         }
 
 
 
-        ///draw action
+
 
 
         @Override
         public void onSurfaceChanged(SurfaceHolder holder, int format, int width, int height) {
             super.onSurfaceChanged(holder, format, width, height);
 
-
+            // some matrix variable
+            // though not needed
             Paint paint = new Paint();
             paint.setColor(background_color);
             paint.setAlpha(255); //set the alpha
@@ -185,6 +234,7 @@ public class matrixWall extends WallpaperService {
     }
 
 
+    //old matrix effect code
     void drawText()
     {
         //Set up the paint
@@ -207,6 +257,7 @@ public class matrixWall extends WallpaperService {
         }
     }
 
+    //old martix effect code
     public void canvasDraw()
     {
         Log.d("canvas ","drawing");
