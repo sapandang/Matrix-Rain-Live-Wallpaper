@@ -1,0 +1,7 @@
+#Mon Jan 16 20:45:19 IST 2017
+base.0=F\:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_fbf2366382f55dc154a1aeea07c6d5a935d72914
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=F\:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_061ad3d8cc2d520688b6a358395dba4031fdd43b\\classes.dex
+base.1=F\:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_061ad3d8cc2d520688b6a358395dba4031fdd43b
+file.0=F\:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_fbf2366382f55dc154a1aeea07c6d5a935d72914\\classes.dex

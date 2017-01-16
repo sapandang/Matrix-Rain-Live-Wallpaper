@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aahex_error">Digita un codice hex di 2 valori</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Vai alla home page"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Vai in alto"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Altre opzioni"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fine"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Visualizza tutte"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Scegli un\'applicazione"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"OFF"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ON"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Cerca…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Cancella query"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Query di ricerca"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Cerca"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Invia query"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Ricerca vocale"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Condividi con"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Comprimi"</string>
+    <string name="amber_name">Ambra</string>
+    <string name="blueGrey_name">Grigio blu</string>
+    <string name="blue_name">Blu</string>
+    <string name="brown_name">Marrone</string>
+    <string name="cyan_name">Ciano</string>
+    <string name="darkGrey_name">Grigio scuro</string>
+    <string name="deepOrange_name">Arancio scuro</string>
+    <string name="deepPurple_name">Viola scuro</string>
+    <string name="green_name">Verde</string>
+    <string name="grey_name">Grigio</string>
+    <string name="hex_error">Digita un codice hex di 6 valori</string>
+    <string name="indigo_name">Indaco</string>
+    <string name="lightBlue_name">Blu chiaro</string>
+    <string name="lightGreen_name">Verde chiaro</string>
+    <string name="lime_name">Lime</string>
+    <string name="orange_name">Arancio</string>
+    <string name="pink_name">Rosa</string>
+    <string name="purple_name">Viola</string>
+    <string name="red_name">Rosso</string>
+    <string name="rgb_error">Digita un valore tra 0 e 255</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="teal_name">Alzavola</string>
+    <string name="yellow_name">Giallo</string>
+</resources>

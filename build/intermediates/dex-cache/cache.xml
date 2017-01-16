@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_2cc044840bde6815126838d7895cc0855c91487a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_d029e3b8aaafe84f701bf9819d9041e2c5f54014\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b68f496477d9d12ee7583c0f0fef4d6c4e5f8a7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_dcdc7b36a9058978faa3cf64f636e360ee288e68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_5dfc3466808489edfa421e2228a8fcf2dd49543e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_b997e7d9bacef1c1320df4eec1e95ee125726e5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="449b92971255a43be72299a3fff16e9995b2757f">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fbf2366382f55dc154a1aeea07c6d5a935d72914\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b60fa668cff76672b0f76d6bf909005066287e9">
+        <dex dex="F:\WorkSpace\android\MatrixLiveWallpaper\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_061ad3d8cc2d520688b6a358395dba4031fdd43b\classes.dex" />
+    </item>
+
+</items>

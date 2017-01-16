@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\res\\merged\\debug\\xml\\mywallpaper.xml",
+        "source": "F:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\src\\main\\res\\xml\\mywallpaper.xml"
+    },
+    {
+        "merged": "F:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "F:\\WorkSpace\\android\\MatrixLiveWallpaper\\app\\src\\main\\res\\xml\\preferences.xml"
+    }
+]
