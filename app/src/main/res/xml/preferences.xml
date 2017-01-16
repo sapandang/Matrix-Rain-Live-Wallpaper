@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="matrix_scroll_text"
+        android:defaultValue="SAPAN"
+        android:summary="Set the falling text"
+        android:title="Falling text" />
+
+    <EditTextPreference
+        android:key="matrix_falling_speed"
+        android:defaultValue="10"
+        android:summary="Set the falling speed in mili-second"
+        android:title="Set speed" />
+
+    <EditTextPreference
+        android:key="matrix_font_size"
+        android:defaultValue="15"
+        android:summary="Set the font size"
+        android:title="Set font size" />
+
+    <Preference
+        android:key="background_color"
+        android:title="Set the background color"
+        android:defaultValue="#FF000000"/>
+
+    <Preference
+        android:key="text_color"
+        android:title="Set the text color"
+        android:defaultValue="#FF8BFF4A"/>
+
+</PreferenceScreen>
