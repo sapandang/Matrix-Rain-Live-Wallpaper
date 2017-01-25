@@ -8,7 +8,7 @@ Follow the tutorial at:
 http://www.androidlearner.com/2017/01/android-live-wallpaper-tutorial.html
 
 
-<img src="https://github.com/sapandang/Matrix-Rain-Live-Wallpaper/blob/master/scr1.jpeg" alt="Drawing" style="width: 150px; height =250px"/>
+<img src="https://github.com/sapandang/Matrix-Rain-Live-Wallpaper/blob/master/scr1.jpeg" alt="Drawing" style="width: 50px; height =100px"/>
 
 Download apk  :-
 https://github.com/sapandang/Matrix-Rain-Live-Wallpaper/blob/master/app/build/outputs/apk/app-debug.apk
