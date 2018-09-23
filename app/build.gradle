@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "matrixlw.app.skd.matrixlivewallpaper"
         minSdkVersion 16
@@ -25,9 +25,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:support-v4:23.4.0'
-    compile 'com.android.support:support-vector-drawable:23.4.0'
+    compile 'com.android.support:appcompat-v7:27.0.0'
+    compile 'com.android.support:support-v4:27.0.0'
+    compile 'com.android.support:support-vector-drawable:27.0.0'
     testCompile 'junit:junit:4.12'
     compile project(path: ':cpl')
 }
